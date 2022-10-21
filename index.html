@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
     <title>Jetro</title>
@@ -16,7 +17,7 @@
     <nav class="navbar navbar-expand-lg border-bottom">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="asset/logo.png" alt="logo jetro" height="44" />
+          <img src="asset/logo.png" alt="logo jetro" height="40" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,20 +35,225 @@
     </nav>
 
     <main>
-      <div class="section">
+      <section class="py-3">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
-              <h1>Slide One</h1>
-              <p style="font-size: 18px" class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna volutpat nibh sed tellus nunc, cursus. Ultricies eget scelerisque amet vitae adipiscing enim. In orci in eget tincidu</p>
+            <div class="col-lg-6 order-lg-2 mb-3 mb-lg-0">
+              <!-- Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="asset/img1-thumb.png" alt="slide one" class="img-fluid" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="asset/img2-thumb.png" alt="slide one" class="img-fluid" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="asset/img3-thumb.png" alt="slide one" class="img-fluid" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-6"></div>
+            <div class="col-lg-6 position-relative align-self-center order-lg-1">
+              <h1 class="text-orange">Slide One</h1>
+              <p style="font-size: 18px" class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna volutpat nibh sed tellus nunc, cursus. Ultricies eget scelerisque amet vitae adipiscing enim. In orci in eget tincidu</p>
+
+              <div class="position-relative">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section style="padding: 150px 0">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 mb-4 mb-lg-0">
+              <div class="card shadow1 cardHover border-0">
+                <div class="card-body text-center p-3">
+                  <div>
+                    <svg width="72" height="71" viewBox="0 0 72 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="36" cy="35.5" r="35.5" fill="#FFEAE4" />
+                      <path
+                        d="M30.4851 53.9916C27.2944 53.0389 24.4046 51.2763 22.0971 48.8754C22.8395 47.9949 23.3023 46.9128 23.4263 45.7678C23.5503 44.6227 23.3298 43.4667 22.793 42.4477C22.2563 41.4286 21.4277 40.5929 20.4132 40.0475C19.3988 39.502 18.2447 39.2717 17.0987 39.3859C16.8376 38.1069 16.7064 36.8049 16.707 35.4995C16.707 33.4836 17.0157 31.539 17.5906 29.712H17.6716C18.6553 29.7124 19.6227 29.462 20.4827 28.9845C21.3427 28.507 22.0668 27.8183 22.5867 26.9832C23.1065 26.1482 23.405 25.1944 23.4538 24.212C23.5027 23.2296 23.3003 22.2509 22.8659 21.3684C25.1275 19.2625 27.8625 17.7318 30.8401 16.9053C31.3247 17.8567 32.0631 18.6556 32.9735 19.2135C33.8839 19.7713 34.9309 20.0665 35.9987 20.0662C37.0665 20.0665 38.1135 19.7713 39.0239 19.2135C39.9343 18.6556 40.6727 17.8567 41.1573 16.9053C44.1349 17.7318 46.87 19.2625 49.1315 21.3684C48.6939 22.2571 48.4917 23.2432 48.5443 24.2324C48.5969 25.2216 48.9025 26.1807 49.4319 27.018C49.9612 27.8553 50.6966 28.5426 51.5677 29.0143C52.4388 29.4861 53.4163 29.7263 54.4068 29.712C54.9942 31.585 55.2921 33.5367 55.2904 35.4995C55.2904 36.8307 55.1553 38.1309 54.8987 39.3868C53.7527 39.2726 52.5986 39.503 51.5842 40.0484C50.5697 40.5939 49.7411 41.4296 49.2044 42.4486C48.6676 43.4677 48.4471 44.6237 48.5711 45.7687C48.6951 46.9138 49.1579 47.9958 49.9003 48.8764C47.5927 51.2769 44.7029 53.0392 41.5123 53.9916C41.1376 52.8237 40.4017 51.8051 39.4108 51.0823C38.42 50.3596 37.2252 49.9702 35.9987 49.9702C34.7722 49.9702 33.5774 50.3596 32.5866 51.0823C31.5957 51.8051 30.8598 52.8237 30.4851 53.9916Z"
+                        stroke="#E8663C"
+                        stroke-width="3"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M35.9982 42.2512C36.8849 42.2512 37.7629 42.0766 38.5821 41.7373C39.4013 41.3979 40.1456 40.9006 40.7726 40.2736C41.3996 39.6466 41.897 38.9023 42.2363 38.0831C42.5756 37.2639 42.7503 36.3858 42.7503 35.4992C42.7503 34.6125 42.5756 33.7344 42.2363 32.9152C41.897 32.096 41.3996 31.3517 40.7726 30.7247C40.1456 30.0977 39.4013 29.6004 38.5821 29.261C37.7629 28.9217 36.8849 28.7471 35.9982 28.7471C34.2074 28.7471 32.49 29.4584 31.2237 30.7247C29.9575 31.991 29.2461 33.7084 29.2461 35.4992C29.2461 37.2899 29.9575 39.0073 31.2237 40.2736C32.49 41.5399 34.2074 42.2512 35.9982 42.2512V42.2512Z"
+                        stroke="#E8663C"
+                        stroke-width="3"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <h6 class="my-3 lh-base text-orange">Check Out My Latest Portfolio Items</h6>
+                  <small style="font-size: 12px">Quis dis duis ipsum volutpat augue sollicitudin massa scelerisque porta. commodo conubia et</small>
+                  <div class="d-grid mt-3">
+                    <button class="btn btn-orange btn-sm" type="button">MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4 mb-lg-0">
+              <div class="card shadow1 cardHover border-0">
+                <div class="card-body text-center p-3">
+                  <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="35.5" cy="35.5" r="35.5" fill="#FFEAE4" />
+                    <path
+                      d="M51.169 46.8772C50.3159 44.8567 49.0781 43.0214 47.5243 41.4736C45.9752 39.9212 44.1402 38.6836 42.1206 37.8289C42.1025 37.8199 42.0844 37.8153 42.0664 37.8063C44.8835 35.7714 46.7149 32.4569 46.7149 28.7173C46.7149 22.5222 41.6956 17.5029 35.5005 17.5029C29.3055 17.5029 24.2862 22.5222 24.2862 28.7173C24.2862 32.4569 26.1176 35.7714 28.9347 37.8108C28.9166 37.8199 28.8986 37.8244 28.8805 37.8334C26.8546 38.6881 25.0368 39.9135 23.4768 41.4781C21.9245 43.0271 20.6868 44.8622 19.8321 46.8818C18.9925 48.859 18.5397 50.9788 18.4982 53.1265C18.497 53.1748 18.5054 53.2228 18.5231 53.2677C18.5407 53.3127 18.5672 53.3536 18.6009 53.3882C18.6346 53.4227 18.6749 53.4502 18.7194 53.4689C18.7638 53.4877 18.8116 53.4973 18.8599 53.4973H21.5731C21.772 53.4973 21.9303 53.3391 21.9348 53.1446C22.0252 49.6537 23.427 46.3844 25.905 43.9064C28.469 41.3424 31.874 39.9316 35.5005 39.9316C39.1271 39.9316 42.5321 41.3424 45.096 43.9064C47.574 46.3844 48.9758 49.6537 49.0663 53.1446C49.0708 53.3436 49.2291 53.4973 49.428 53.4973H52.1412C52.1894 53.4973 52.2372 53.4877 52.2817 53.4689C52.3262 53.4502 52.3665 53.4227 52.4002 53.3882C52.4339 53.3536 52.4604 53.3127 52.478 53.2677C52.4957 53.2228 52.5041 53.1748 52.5029 53.1265C52.4577 50.9651 52.01 48.8624 51.169 46.8772ZM35.5005 36.4949C33.425 36.4949 31.4715 35.6855 30.0019 34.2159C28.5323 32.7463 27.7229 30.7928 27.7229 28.7173C27.7229 26.6417 28.5323 24.6882 30.0019 23.2186C31.4715 21.749 33.425 20.9396 35.5005 20.9396C37.5761 20.9396 39.5296 21.749 40.9992 23.2186C42.4688 24.6882 43.2782 26.6417 43.2782 28.7173C43.2782 30.7928 42.4688 32.7463 40.9992 34.2159C39.5296 35.6855 37.5761 36.4949 35.5005 36.4949Z"
+                      fill="#E8663C"
+                    />
+                  </svg>
+                  <h6 class="my-3 lh-base text-orange">Offer Top Notch Quality Work & Services</h6>
+                  <small style="font-size: 12px">Quis dis duis ipsum volutpat augue sollicitudin massa scelerisque porta. commodo conubia et</small>
+                  <div class="d-grid mt-3">
+                    <button class="btn btn-orange btn-sm" type="button">MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4 mb-lg-0">
+              <div class="card shadow1 cardHover border-0">
+                <div class="card-body text-center p-3">
+                  <svg width="72" height="71" viewBox="0 0 72 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="36" cy="35.5" r="35.5" fill="#FFEAE4" />
+                    <path d="M22 35.5L32 45.5L52 25.5" stroke="#E8663C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <h6 class="my-3 lh-base text-orange">Follow Me On Twitter, Facebook & Pinterst</h6>
+                  <small style="font-size: 12px">Quis dis duis ipsum volutpat augue sollicitudin massa scelerisque porta. commodo conubia et</small>
+                  <div class="d-grid mt-3">
+                    <button class="btn btn-orange btn-sm" type="button">MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="background-color: #f7f7f7">
+        <div class="container py-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 text-center mb-4">
+              <h4 class="text-orange text-uppercase">Recent Work</h4>
+              <small>Curae venenatis est eleifend potenti commodo nam metus. Phasellus magna curae ex sollicitudin mauris. Mollis hac porttitor cras dignissim nibh id mus porta interdum ornare nostra.</small>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <div class="card border-0 shadow1 cardHover">
+                <div class="card-body">
+                  <div class="d-flex">
+                    <div class="col-lg-4">
+                      <img src="asset/contents_img_001.png" alt="Wordpress Theme" class="img-fluid rounded-2" />
+                    </div>
+                    <div class="col-lg-8 ps-3">
+                      <p class="m-0"><a href="#" class="text-reset text-decoration-none stretched-link">Wordpress Theme</a></p>
+                      <p style="font-size: 12px; color: #979797" class="my-1">June 15, 2022</p>
+                      <p style="font-size: 12px" class="m-0">
+                        Sed consectetuer potenti lacinia vivamus nec in metus pretium turpis. Aptent duis efficitur letius montes arcu risus. Ac nullam posuere fusce lectus dolor primis a augue sapien mauris turpis. Justo laoreet cubilia
+                        lobortis nisl quam leo id....
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <div class="card border-0 shadow1 cardHover">
+                <div class="card-body">
+                  <div class="d-flex">
+                    <div class="col-lg-4">
+                      <img src="asset/contents_img_002.png" alt="Brochure Design" class="img-fluid rounded-2" />
+                    </div>
+                    <div class="col-lg-8 ps-3">
+                      <p class="m-0"><a href="#" class="text-reset text-decoration-none stretched-link">Brochure Design</a></p>
+                      <p style="font-size: 12px; color: #979797" class="my-1">June 15, 2022</p>
+                      <p style="font-size: 12px" class="m-0">
+                        Sed consectetuer potenti lacinia vivamus nec in metus pretium turpis. Aptent duis efficitur letius montes arcu risus. Ac nullam posuere fusce lectus dolor primis a augue sapien mauris turpis. Justo laoreet cubilia
+                        lobortis nisl quam leo id....
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <div class="card border-0 shadow1 cardHover">
+                <div class="card-body">
+                  <div class="d-flex">
+                    <div class="col-lg-4">
+                      <img src="asset/contents_img_003.png" alt="Social Media Buttons" class="img-fluid rounded-2" />
+                    </div>
+                    <div class="col-lg-8 ps-3">
+                      <p class="m-0"><a href="#" class="text-reset text-decoration-none stretched-link">Social Media Buttons</a></p>
+                      <p style="font-size: 12px; color: #979797" class="my-1">June 15, 2022</p>
+                      <p style="font-size: 12px" class="m-0">
+                        Sed consectetuer potenti lacinia vivamus nec in metus pretium turpis. Aptent duis efficitur letius montes arcu risus. Ac nullam posuere fusce lectus dolor primis a augue sapien mauris turpis. Justo laoreet cubilia
+                        lobortis nisl quam leo id....
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <div class="card border-0 shadow1 cardHover">
+                <div class="card-body">
+                  <div class="d-flex">
+                    <div class="col-lg-4">
+                      <img src="asset/contents_img_004.png" alt="Character Design" class="img-fluid rounded-2" />
+                    </div>
+                    <div class="col-lg-8 ps-3">
+                      <p class="m-0"><a href="#" class="text-reset text-decoration-none stretched-link">Character Design</a></p>
+                      <p style="font-size: 12px; color: #979797" class="my-1">June 15, 2022</p>
+                      <p style="font-size: 12px" class="m-0">
+                        Sed consectetuer potenti lacinia vivamus nec in metus pretium turpis. Aptent duis efficitur letius montes arcu risus. Ac nullam posuere fusce lectus dolor primis a augue sapien mauris turpis. Justo laoreet cubilia
+                        lobortis nisl quam leo id....
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="padding: 150px 0">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="asset/about.png" alt="images about" class="img-fluid" />
+            </div>
+            <div class="col-lg-7 offset-lg-1 align-self-center">
+              <h4 class="text-orange text-uppercase">About Jetro</h4>
+              <p class="lh-lg">
+                Curae venenatis est eleifend potenti commodo nam metus. Phasellus magna curae ex sollicitudin mauris. Mollis hac porttitor cras dignissim nibh id mus porta interdum ornare nostra. Diam fusce congue ex imperdiet a non class
+                suscipit donec si. Ut curae ridiculus velit maecenas volutpat eros fames leo et at. Montes tempor lacus erat lacinia dictum consequat suspendisse scelerisque. Himenaeos risus duis mattis libero pulvinar massa pretium commodo
+                tristique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <p class="text-uppercase">Twitter</p>
+              <h4 class="text-orange">@bestpsdfreebies</h4>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
