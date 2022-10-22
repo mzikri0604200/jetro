@@ -10,8 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
-    <title>Jetro</title>
+    <title>JETRO</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg border-bottom">
@@ -34,40 +41,57 @@
       </div>
     </nav>
 
-    <main>
-      <section class="py-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 order-lg-2 mb-3 mb-lg-0">
-              <!-- Swiper -->
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="asset/img1-thumb.png" alt="slide one" class="img-fluid" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="asset/img2-thumb.png" alt="slide one" class="img-fluid" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="asset/img3-thumb.png" alt="slide one" class="img-fluid" />
-                  </div>
+    <header class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 order-lg-2 mb-3 mb-lg-0">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facilis, nihil voluptatum, voluptatem expedita placeat, magni ratione consequuntur quisquam modi laudantium. Temporibus obcaecati vero cumque possimus nesciunt non quas nisi."
+                  data-title="Slide One"
+                >
+                  <img src="asset/img1-thumb.png" alt="slide one" class="img-fluid" />
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus omnis nesciunt minus aperiam! Ullam sapiente quis velit molestiae, eligendi illo culpa quae eum, voluptatem recusandae sunt consequuntur doloremque aliquam vel!"
+                  data-title="Slide Two"
+                >
+                  <img src="asset/img2-thumb.png" alt="slide two" class="img-fluid" />
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, molestiae adipisci voluptatibus recusandae eveniet excepturi dolores inventore architecto sapiente quis alias eligendi iusto ipsa, eaque officia reiciendis odit doloremque amet?"
+                  data-title="Slide Three"
+                >
+                  <img src="asset/img3-thumb.png" alt="Slide Three" class="img-fluid" />
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 position-relative align-self-center order-lg-1">
-              <h1 class="text-orange">Slide One</h1>
-              <p style="font-size: 18px" class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna volutpat nibh sed tellus nunc, cursus. Ultricies eget scelerisque amet vitae adipiscing enim. In orci in eget tincidu</p>
+          </div>
+          <div class="col-lg-6 position-relative align-self-center order-lg-1">
+            <h1 class="text-orange title">Slide One</h1>
+            <p style="font-size: 18px" class="lh-lg desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facilis, nihil voluptatum, voluptatem expedita placeat, magni ratione consequuntur quisquam modi laudantium. Temporibus obcaecati vero cumque possimus nesciunt
+              non quas nisi.
+            </p>
 
-              <div class="position-relative">
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
+            <div class="position-relative">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </header>
 
-      <section style="padding: 150px 0">
+    <main class="position-relative">
+      <section class="position-relative overflow-hidden" style="padding: 150px 0">
+        <span class="bg-radial-gradient" style="left: -6%; top: -2%"></span>
+        <span class="bg-radial-gradient" style="right: -13%; bottom: -15%"></span>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-3 mb-4 mb-lg-0">
@@ -135,8 +159,8 @@
         </div>
       </section>
 
-      <section style="background-color: #f7f7f7">
-        <div class="container py-5">
+      <section class="py-5" style="background-color: #f7f7f7">
+        <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-10 text-center mb-4">
               <h4 class="text-orange text-uppercase">Recent Work</h4>
@@ -225,7 +249,7 @@
       <section style="padding: 150px 0">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-lg-0 mb-4">
               <img src="asset/about.png" alt="images about" class="img-fluid" />
             </div>
             <div class="col-lg-7 offset-lg-1 align-self-center">
@@ -240,20 +264,150 @@
         </div>
       </section>
 
-      <section>
+      <section class="py-5" style="background-color: #f7f7f7">
         <div class="container">
           <div class="row">
-            <div class="col text-center">
-              <p class="text-uppercase">Twitter</p>
-              <h4 class="text-orange">@bestpsdfreebies</h4>
+            <div class="col-12 text-center mb-4">
+              <p class="text-uppercase mb-2">Twitter</p>
+              <h4 class="text-orange m-0">@bestpsdfreebies</h4>
+            </div>
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="card shadow1 border-0">
+                <div class="card-body">
+                  <div class="d-flex">
+                    <img src="asset/user1.png" width="55" height="55" alt="profile user twitter" />
+                    <div class="ps-3">
+                      <h5 class="m-0" style="font-size: 18px">
+                        Pixel Mater
+                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1770_193)">
+                            <path
+                              d="M7.54965 1.15265C7.34777 0.946052 7.10663 0.781892 6.84041 0.669814C6.57419 0.557735 6.28825 0.5 5.9994 0.5C5.71054 0.5 5.4246 0.557735 5.15838 0.669814C4.89216 0.781892 4.65102 0.946052 4.44915 1.15265L3.98265 1.63115L3.31515 1.6229C3.02621 1.61948 2.7395 1.67386 2.47189 1.78286C2.20428 1.89186 1.96116 2.05327 1.75684 2.25759C1.55252 2.46191 1.39111 2.70503 1.28211 2.97264C1.17311 3.24025 1.11873 3.52696 1.12215 3.8159L1.12965 4.4834L0.652646 4.9499C0.446052 5.15177 0.281892 5.39291 0.169814 5.65913C0.0577355 5.92535 0 6.21129 0 6.50015C0 6.789 0.0577355 7.07494 0.169814 7.34116C0.281892 7.60738 0.446052 7.84852 0.652646 8.0504L1.1304 8.5169L1.12215 9.1844C1.11873 9.47333 1.17311 9.76004 1.28211 10.0277C1.39111 10.2953 1.55252 10.5384 1.75684 10.7427C1.96116 10.947 2.20428 11.1084 2.47189 11.2174C2.7395 11.3264 3.02621 11.3808 3.31515 11.3774L3.98265 11.3699L4.44915 11.8469C4.65102 12.0535 4.89216 12.2177 5.15838 12.3297C5.4246 12.4418 5.71054 12.4995 5.9994 12.4995C6.28825 12.4995 6.57419 12.4418 6.84041 12.3297C7.10663 12.2177 7.34777 12.0535 7.54965 11.8469L8.01615 11.3691L8.68365 11.3774C8.97258 11.3808 9.25929 11.3264 9.5269 11.2174C9.79451 11.1084 10.0376 10.947 10.242 10.7427C10.4463 10.5384 10.6077 10.2953 10.7167 10.0277C10.8257 9.76004 10.8801 9.47333 10.8766 9.1844L10.8691 8.5169L11.3461 8.0504C11.5527 7.84852 11.7169 7.60738 11.829 7.34116C11.9411 7.07494 11.9988 6.789 11.9988 6.50015C11.9988 6.21129 11.9411 5.92535 11.829 5.65913C11.7169 5.39291 11.5527 5.15177 11.3461 4.9499L10.8684 4.4834L10.8766 3.8159C10.8801 3.52696 10.8257 3.24025 10.7167 2.97264C10.6077 2.70503 10.4463 2.46191 10.242 2.25759C10.0376 2.05327 9.79451 1.89186 9.5269 1.78286C9.25929 1.67386 8.97258 1.61948 8.68365 1.6229L8.01615 1.6304L7.54965 1.1534V1.15265ZM7.7649 5.64065L5.5149 7.89065C5.48006 7.92557 5.43868 7.95328 5.39312 7.97218C5.34756 7.99109 5.29872 8.00082 5.2494 8.00082C5.20007 8.00082 5.15123 7.99109 5.10567 7.97218C5.06011 7.95328 5.01873 7.92557 4.9839 7.89065L3.8589 6.76565C3.82403 6.73078 3.79637 6.68939 3.7775 6.64383C3.75863 6.59828 3.74892 6.54945 3.74892 6.50015C3.74892 6.45084 3.75863 6.40201 3.7775 6.35646C3.79637 6.3109 3.82403 6.26951 3.8589 6.23465C3.89376 6.19978 3.93515 6.17212 3.98071 6.15325C4.02626 6.13438 4.07509 6.12467 4.1244 6.12467C4.1737 6.12467 4.22253 6.13438 4.26808 6.15325C4.31364 6.17212 4.35503 6.19978 4.3899 6.23465L5.2494 7.0949L7.2339 5.10965C7.30431 5.03923 7.39981 4.99967 7.4994 4.99967C7.59898 4.99967 7.69448 5.03923 7.7649 5.10965C7.83531 5.18006 7.87487 5.27556 7.87487 5.37515C7.87487 5.47473 7.83531 5.57023 7.7649 5.64065Z"
+                              fill="#1DA1F2"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1770_193">
+                              <rect width="12" height="12" fill="white" transform="translate(0 0.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </h5>
+                      <p class="m-0" style="color: #979797">@pixelmater</p>
+                    </div>
+                  </div>
+                  <h4 class="lh-base my-3">What an awsome design with great functionality :)</h4>
+                  <p class="text-primary mb-1">Translate Tweet</p>
+                  <p class="m-0">14:19・19 Oct 2022・<span class="text-primary">Twitter for Android</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="card shadow1 border-0">
+                <div class="card-body">
+                  <div class="d-flex">
+                    <img src="asset/user2.png" width="55" height="55" alt="profile user twitter" />
+                    <div class="ps-3">
+                      <h5 class="m-0" style="font-size: 18px">
+                        Pixel Mater
+                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1770_193)">
+                            <path
+                              d="M7.54965 1.15265C7.34777 0.946052 7.10663 0.781892 6.84041 0.669814C6.57419 0.557735 6.28825 0.5 5.9994 0.5C5.71054 0.5 5.4246 0.557735 5.15838 0.669814C4.89216 0.781892 4.65102 0.946052 4.44915 1.15265L3.98265 1.63115L3.31515 1.6229C3.02621 1.61948 2.7395 1.67386 2.47189 1.78286C2.20428 1.89186 1.96116 2.05327 1.75684 2.25759C1.55252 2.46191 1.39111 2.70503 1.28211 2.97264C1.17311 3.24025 1.11873 3.52696 1.12215 3.8159L1.12965 4.4834L0.652646 4.9499C0.446052 5.15177 0.281892 5.39291 0.169814 5.65913C0.0577355 5.92535 0 6.21129 0 6.50015C0 6.789 0.0577355 7.07494 0.169814 7.34116C0.281892 7.60738 0.446052 7.84852 0.652646 8.0504L1.1304 8.5169L1.12215 9.1844C1.11873 9.47333 1.17311 9.76004 1.28211 10.0277C1.39111 10.2953 1.55252 10.5384 1.75684 10.7427C1.96116 10.947 2.20428 11.1084 2.47189 11.2174C2.7395 11.3264 3.02621 11.3808 3.31515 11.3774L3.98265 11.3699L4.44915 11.8469C4.65102 12.0535 4.89216 12.2177 5.15838 12.3297C5.4246 12.4418 5.71054 12.4995 5.9994 12.4995C6.28825 12.4995 6.57419 12.4418 6.84041 12.3297C7.10663 12.2177 7.34777 12.0535 7.54965 11.8469L8.01615 11.3691L8.68365 11.3774C8.97258 11.3808 9.25929 11.3264 9.5269 11.2174C9.79451 11.1084 10.0376 10.947 10.242 10.7427C10.4463 10.5384 10.6077 10.2953 10.7167 10.0277C10.8257 9.76004 10.8801 9.47333 10.8766 9.1844L10.8691 8.5169L11.3461 8.0504C11.5527 7.84852 11.7169 7.60738 11.829 7.34116C11.9411 7.07494 11.9988 6.789 11.9988 6.50015C11.9988 6.21129 11.9411 5.92535 11.829 5.65913C11.7169 5.39291 11.5527 5.15177 11.3461 4.9499L10.8684 4.4834L10.8766 3.8159C10.8801 3.52696 10.8257 3.24025 10.7167 2.97264C10.6077 2.70503 10.4463 2.46191 10.242 2.25759C10.0376 2.05327 9.79451 1.89186 9.5269 1.78286C9.25929 1.67386 8.97258 1.61948 8.68365 1.6229L8.01615 1.6304L7.54965 1.1534V1.15265ZM7.7649 5.64065L5.5149 7.89065C5.48006 7.92557 5.43868 7.95328 5.39312 7.97218C5.34756 7.99109 5.29872 8.00082 5.2494 8.00082C5.20007 8.00082 5.15123 7.99109 5.10567 7.97218C5.06011 7.95328 5.01873 7.92557 4.9839 7.89065L3.8589 6.76565C3.82403 6.73078 3.79637 6.68939 3.7775 6.64383C3.75863 6.59828 3.74892 6.54945 3.74892 6.50015C3.74892 6.45084 3.75863 6.40201 3.7775 6.35646C3.79637 6.3109 3.82403 6.26951 3.8589 6.23465C3.89376 6.19978 3.93515 6.17212 3.98071 6.15325C4.02626 6.13438 4.07509 6.12467 4.1244 6.12467C4.1737 6.12467 4.22253 6.13438 4.26808 6.15325C4.31364 6.17212 4.35503 6.19978 4.3899 6.23465L5.2494 7.0949L7.2339 5.10965C7.30431 5.03923 7.39981 4.99967 7.4994 4.99967C7.59898 4.99967 7.69448 5.03923 7.7649 5.10965C7.83531 5.18006 7.87487 5.27556 7.87487 5.37515C7.87487 5.47473 7.83531 5.57023 7.7649 5.64065Z"
+                              fill="#1DA1F2"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1770_193">
+                              <rect width="12" height="12" fill="white" transform="translate(0 0.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </h5>
+                      <p class="m-0" style="color: #979797">@pixelmater</p>
+                    </div>
+                  </div>
+                  <h4 class="lh-base my-3">Phasellus fames malesuada in consectetuer libero cursus cras</h4>
+                  <p class="text-primary mb-1">Translate Tweet</p>
+                  <p class="m-0">14:19・19 Oct 2022・<span class="text-primary">Twitter for Android</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 offset-lg-1 order-lg-2 mb-4 mb-lg-0">
+              <img src="asset/contact.png" class="img-fluid" alt="Contact Us" />
+            </div>
+            <div class="col-lg-7 align-self-center order-lg-1">
+              <h4 class="text-orange text-uppercase">Contact Us</h4>
+              <p>Curae venenatis est eleifend potenti commodo nam metus. Phasellus magna curae ex sollicitudin mauris. Mollis hac porttitor cras dignissim nibh id mus porta interdum ornare nostra.</p>
+              <div class="d-flex flex-wrap mb-lg-0 mb-4 justify-content-between">
+                <p>
+                  You can contact us via email <br />
+                  <span class="text-orange">information@jetro.com</span>
+                </p>
+                <div class="align-self-center">
+                  <a class="text-decoration-none text-reset" href="#">
+                    <svg class="hoverUp" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M29.5544 6.67049C28.5106 7.13299 27.3894 7.44549 26.2106 7.58674C27.4269 6.85898 28.3368 5.71357 28.7706 4.36424C27.6279 5.04298 26.3773 5.52074 25.0731 5.77674C24.1961 4.84032 23.0345 4.21965 21.7685 4.01108C20.5026 3.80252 19.2032 4.01773 18.0722 4.62331C16.9411 5.22888 16.0416 6.19094 15.5133 7.36012C14.985 8.5293 14.8575 9.84018 15.1506 11.0892C12.8352 10.973 10.5702 10.3712 8.50241 9.32287C6.43465 8.27457 4.61043 6.80319 3.14812 5.00424C2.64812 5.86674 2.36063 6.86674 2.36063 7.93174C2.36007 8.89049 2.59617 9.83454 3.04797 10.6802C3.49978 11.5258 4.15333 12.2468 4.95063 12.7792C4.02597 12.7498 3.12172 12.5 2.31313 12.0505V12.1255C2.31303 13.4702 2.77817 14.7735 3.6296 15.8142C4.48104 16.855 5.66634 17.5692 6.98438 17.8355C6.1266 18.0676 5.2273 18.1018 4.35438 17.9355C4.72625 19.0925 5.45062 20.1043 6.42608 20.8291C7.40155 21.554 8.57927 21.9557 9.79438 21.978C7.73167 23.5973 5.18423 24.4756 2.56187 24.4717C2.09735 24.4719 1.63322 24.4447 1.17188 24.3905C3.83372 26.102 6.9323 27.0103 10.0969 27.0067C20.8094 27.0067 26.6656 18.1342 26.6656 10.4392C26.6656 10.1892 26.6594 9.93674 26.6481 9.68674C27.7872 8.86296 28.7705 7.84286 29.5519 6.67424L29.5544 6.67049V6.67049Z"
+                        fill="#E8663C"
+                      />
+                    </svg>
+                  </a>
+                  <a class="text-decoration-none text-reset ms-3" href="#">
+                    <svg class="hoverUp" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.6563 27.999V18.3178H22.9063L23.3925 14.5453H19.655V12.1365C19.655 11.044 19.9588 10.299 21.5263 10.299H23.5238V6.92402C22.5564 6.82108 21.5841 6.771 20.6113 6.77402C17.7313 6.77402 15.76 8.53277 15.76 11.7615V14.5453H12.5V18.3178H15.7588V27.999H3.88C3.1175 27.999 2.5 27.3815 2.5 26.619V4.37902C2.5 3.61652 3.1175 2.99902 3.88 2.99902H26.12C26.8825 2.99902 27.5 3.61652 27.5 4.37902V26.619C27.5 27.3815 26.8825 27.999 26.12 27.999H19.6563V27.999Z"
+                        fill="#E8663C"
+                      />
+                    </svg>
+                  </a>
+                  <a class="text-decoration-none text-reset ms-3" href="#">
+                    <svg class="hoverUp" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M27.5 11.724V22.999C27.5 24.374 26.375 25.499 25 25.499H5C3.625 25.499 2.5 24.374 2.5 22.999V7.99902C2.5 6.62402 3.625 5.49902 5 5.49902H17.625C17.55 5.89902 17.5 6.32402 17.5 6.74902C17.5 8.59902 18.3125 10.2365 19.5875 11.3865L15 14.249L5 7.99902V10.499L15 16.749L21.625 12.599C22.3 12.849 23 12.999 23.75 12.999C25.1625 12.999 26.45 12.5115 27.5 11.724ZM20 6.74902C20 8.82402 21.675 10.499 23.75 10.499C25.825 10.499 27.5 8.82402 27.5 6.74902C27.5 4.67402 25.825 2.99902 23.75 2.99902C21.675 2.99902 20 4.67402 20 6.74902Z"
+                        fill="#E8663C"
+                      />
+                    </svg>
+                  </a>
+                  <a class="text-decoration-none text-reset ms-3" href="#">
+                    <svg class="hoverUp" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.625 2.99902C3.89375 2.99902 2.5 4.39277 2.5 6.12402V24.874C2.5 26.6053 3.89375 27.999 5.625 27.999H24.375C26.1063 27.999 27.5 26.6053 27.5 24.874V6.12402C27.5 4.39277 26.1063 2.99902 24.375 2.99902H5.625ZM12.7948 9.50944C13.451 9.50944 13.8417 9.82194 13.9667 10.4469L15.4906 19.0959C15.975 18.4553 16.3719 17.9157 16.6844 17.4782C17.2021 16.732 17.6495 15.9393 18.0208 15.1105C18.4427 14.2199 18.6542 13.423 18.6542 12.7199C18.6542 12.298 18.5365 11.9626 18.3021 11.7126C18.0833 11.4469 17.6688 11.1115 17.0594 10.7053C17.6844 9.9084 18.4656 9.50944 19.4031 9.50944C19.9031 9.50944 20.3177 9.6584 20.6458 9.95527C20.9896 10.2521 21.1604 10.6886 21.1604 11.2678C21.1604 12.2365 20.7542 13.448 19.9417 14.9011C19.1448 16.3386 17.6073 18.5022 15.326 21.3928L13.0063 21.5553L11.224 11.5261H8.88021V10.5407C9.50521 10.3376 10.2396 10.1178 11.0833 9.88444C11.9271 9.63444 12.4979 9.50944 12.7948 9.50944V9.50944Z"
+                        fill="#E8663C"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <a href="mailto:information@jetro.com" class="btn btn-outline-orange px-3">Contact Us</a>
             </div>
           </div>
         </div>
       </section>
     </main>
 
+    <footer class="bg-orange py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p class="m-0 text-white">© 2022 Jetro. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

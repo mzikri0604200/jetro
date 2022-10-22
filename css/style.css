@@ -6,6 +6,10 @@ body {
   color: #e8603c;
 }
 
+.bg-orange {
+  background-color: #e8663c;
+}
+
 .btn-orange {
   background-color: #e8603c;
   color: white;
@@ -30,6 +34,26 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 0.5s all;
   transform: translateY(-3px);
+}
+
+.hoverUp {
+  transition: 0.5s all;
+}
+.hoverUp:hover {
+  transition: 0.5s all;
+  transform: translateY(-4px);
+}
+
+.btn-outline-orange {
+  color: #e8603c;
+  background-color: white;
+  border: 1px solid #e8603c;
+}
+
+.btn-outline-orange:hover {
+  background-color: #e8603c;
+  color: white;
+  border: 1px solid #e8603c;
 }
 
 .container {
@@ -80,4 +104,12 @@ body {
 .swiper-rtl .swiper-button-next {
   left: 3%;
   right: auto;
+}
+
+.bg-radial-gradient {
+  background-image: radial-gradient(50% 50% at 50% 50%, #e8603c 0, hsla(0, 0%, 100%, 0) 100%);
+  position: absolute;
+  width: 540px;
+  height: 540px;
+  opacity: 0.25;
 }
