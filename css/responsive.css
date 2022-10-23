@@ -8,6 +8,38 @@
     max-width: 720px;
   }
 }
+
+@media (max-width: 992px) {
+  .overlay {
+    height: 100%;
+    width: 0;
+    text-align: left;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    background-color: #ffeae4;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+  }
+
+  .overlay .nav-link {
+    padding: 8px 30px;
+    text-align: right;
+  }
+  .closebtn {
+    text-align: right;
+    padding: 0 30px;
+    font-size: 40px;
+    color: #333;
+    z-index: 999;
+  }
+  .closebtn:hover {
+    border: none;
+  }
+}
+
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
@@ -16,6 +48,18 @@
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+
+  .navbar-nav .nav-link.active:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    margin: 0 auto;
+    width: 50%; /* or 100px */
+    border-bottom: 2px solid #e8603c;
   }
 }
 @media (min-width: 1400px) {

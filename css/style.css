@@ -1,3 +1,8 @@
+* {
+  scroll-behavior: smooth;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -66,6 +71,12 @@ body {
 .navbar-nav .show > .nav-link {
   color: #e8603c;
   font-weight: 600;
+  position: relative;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #e8603c;
 }
 
 .swiper-slide img {
@@ -104,12 +115,4 @@ body {
 .swiper-rtl .swiper-button-next {
   left: 3%;
   right: auto;
-}
-
-.bg-radial-gradient {
-  background-image: radial-gradient(50% 50% at 50% 50%, #e8603c 0, hsla(0, 0%, 100%, 0) 100%);
-  position: absolute;
-  width: 540px;
-  height: 540px;
-  opacity: 0.25;
 }

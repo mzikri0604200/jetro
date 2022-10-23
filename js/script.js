@@ -21,3 +21,10 @@ function updateCaptionText(slider) {
   var decs = document.querySelector('.desc');
   decs.innerHTML = slider.slides[slider.activeIndex].dataset.desc;
 }
+
+function openNav() {
+  document.getElementById('myNav').style.width = '50%';
+}
+function closeNav() {
+  document.getElementById('myNav').style.width = '0%';
+}

@@ -17,31 +17,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
+    <link rel="stylesheet" href="css/responsive.css" />
     <title>JETRO</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg border-bottom">
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="asset/logo.png" alt="logo jetro" height="40" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" onclick="openNav()">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link px-lg-2" href="#">About Us</a>
-            <a class="nav-link px-lg-2" href="#">Blog</a>
-            <a class="nav-link px-lg-2" href="#">Portfolio</a>
-            <a class="nav-link" href="#">Contact Us</a>
+        <div class="navbar-collapse">
+          <div class="navbar-nav ms-auto overlay" id="myNav">
+            <a href="javascript:void(0)" class="closebtn text-decoration-none d-lg-none" onclick="closeNav()">&times;</a>
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link mx-lg-2" href="#about">About Us</a>
+            <a class="nav-link mx-lg-2" href="#">Blog</a>
+            <a class="nav-link mx-lg-2" href="#">Portfolio</a>
+            <a class="nav-link" href="#contact">Contact Us</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <header class="my-5">
+    <header class="py-md-5 py-3">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 order-lg-2 mb-3 mb-lg-0">
@@ -89,9 +90,9 @@
     </header>
 
     <main class="position-relative">
-      <section class="position-relative overflow-hidden" style="padding: 150px 0">
-        <span class="bg-radial-gradient" style="left: -6%; top: -2%"></span>
-        <span class="bg-radial-gradient" style="right: -13%; bottom: -15%"></span>
+      <section style="padding: 150px 0">
+        <!-- <span class="bg-radial-gradient" style="left: -6%; top: -2%"></span> -->
+        <!-- <span class="bg-radial-gradient" style="right: -13%; top: 10%"></span> -->
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-3 mb-4 mb-lg-0">
@@ -159,7 +160,7 @@
         </div>
       </section>
 
-      <section class="py-5" style="background-color: #f7f7f7">
+      <section class="py-5" style="background-color: #fff">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-10 text-center mb-4">
@@ -167,7 +168,7 @@
               <small>Curae venenatis est eleifend potenti commodo nam metus. Phasellus magna curae ex sollicitudin mauris. Mollis hac porttitor cras dignissim nibh id mus porta interdum ornare nostra.</small>
             </div>
             <div class="col-lg-6 mb-4">
-              <div class="card border-0 shadow1 cardHover">
+              <div class="card border-0 cardHover">
                 <div class="card-body">
                   <div class="d-flex">
                     <div class="col-lg-4">
@@ -186,7 +187,7 @@
               </div>
             </div>
             <div class="col-lg-6 mb-4">
-              <div class="card border-0 shadow1 cardHover">
+              <div class="card border-0 cardHover">
                 <div class="card-body">
                   <div class="d-flex">
                     <div class="col-lg-4">
@@ -205,7 +206,7 @@
               </div>
             </div>
             <div class="col-lg-6 mb-4">
-              <div class="card border-0 shadow1 cardHover">
+              <div class="card border-0 cardHover">
                 <div class="card-body">
                   <div class="d-flex">
                     <div class="col-lg-4">
@@ -224,7 +225,7 @@
               </div>
             </div>
             <div class="col-lg-6 mb-4">
-              <div class="card border-0 shadow1 cardHover">
+              <div class="card border-0 cardHover">
                 <div class="card-body">
                   <div class="d-flex">
                     <div class="col-lg-4">
@@ -246,7 +247,8 @@
         </div>
       </section>
 
-      <section style="padding: 150px 0">
+      <!-- About -->
+      <section id="about" style="padding: 150px 0">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 mb-lg-0 mb-4">
@@ -337,7 +339,8 @@
         </div>
       </section>
 
-      <section class="my-5">
+      <!-- Contact Us -->
+      <section id="contact" style="padding: 70px 0">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 offset-lg-1 order-lg-2 mb-4 mb-lg-0">
