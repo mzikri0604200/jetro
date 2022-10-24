@@ -243,11 +243,6 @@ h6 {
   color: #979797;
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
 .lh-lg {
   line-height: 2 !important;
 }
