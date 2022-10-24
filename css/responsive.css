@@ -7,6 +7,10 @@
   .container {
     max-width: 720px;
   }
+
+  .py-md-5 {
+    padding: 3rem 0 !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -120,6 +124,10 @@
   }
   .order-lg-2 {
     order: 2 !important;
+  }
+
+  .p-lg-3 {
+    padding: 1rem !important;
   }
 }
 @media (min-width: 1200px) {
